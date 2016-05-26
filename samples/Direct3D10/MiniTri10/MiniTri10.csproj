@@ -206,7 +206,6 @@
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="SlimDX, Version=2.0.12.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -250,6 +249,12 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\build\SlimDX.vcxproj">
+      <Project>{8ECCE443-0440-40F4-A94C-F02E027282C3}</Project>
+      <Name>SlimDX</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

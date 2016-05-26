@@ -8,3 +8,39 @@
 *.unsuccessfulbuild
 *.lastbuildstate
 *.log
+/build/ipch/effects11-5967583c/effects11-4936cdea.ipch
+/samples/Direct3D10/SimpleModel10/bin/x86/Debug/SimpleModel10.vshost.exe
+/samples/Direct3D10/SimpleModel10/bin/x86/Debug/SimpleModel10.vshost.exe.manifest
+/samples/Direct3D10/SimpleModel10/bin/x86/Release/SampleFramework.dll
+/samples/Direct3D10/SimpleModel10/bin/x86/Release/SampleFramework.xml
+/samples/Direct3D10/SimpleModel10/bin/x86/Release/SimpleModel10.exe
+/samples/Direct3D10/SimpleModel10/bin/x86/Release/SimpleModel10.fx
+/samples/Direct3D10/SimpleModel10/bin/x86/Release/SimpleModel10.vshost.exe
+/samples/Direct3D10/SimpleModel10/bin/x86/Release/SimpleModel10.vshost.exe.manifest
+/samples/Direct3D10/SimpleModel10/bin/x86/Release/SlimDX.dll
+/samples/Direct3D10/SimpleModel10/bin/x86/Release/SlimDX.xml
+/samples/Direct3D10/SimpleModel10/bin/x86/Release/jupiter.SMD
+/samples/Direct3D10/SimpleModel10/bin/x86/Release/jupiter.jpg
+/samples/Direct3D9/MiniTri/bin/x86/Release/MiniTri.exe
+/samples/Direct3D9/MiniTri/bin/x86/Release/MiniTri.vshost.exe
+/samples/Direct3D9/MiniTri/bin/x86/Release/MiniTri.vshost.exe.manifest
+/samples/Direct3D9/MiniTri/bin/x86/Release/SlimDX.dll
+/samples/Direct3D9/MiniTri/bin/x86/Release/SlimDX.xml
+/samples/Direct3D9/WPF Interop/SlimDX.Wpf/bin/x86/Release/SlimDX.Wpf.dll
+/samples/Direct3D9/WPF Interop/SlimDX.Wpf/bin/x86/Release/SlimDX.dll
+/samples/Direct3D9/WPF Interop/SlimDX.Wpf/bin/x86/Release/SlimDX.xml
+/samples/Direct3D9/WPF Interop/WpfSample/bin/x86/Release/SlimDX.Wpf.dll
+/samples/Direct3D9/WPF Interop/WpfSample/bin/x86/Release/SlimDX.dll
+/samples/Direct3D9/WPF Interop/WpfSample/bin/x86/Release/SlimDX.xml
+/samples/Direct3D9/WPF Interop/WpfSample/bin/x86/Release/WpfSample.exe
+/samples/Direct3D9/WPF Interop/WpfSample/bin/x86/Release/WpfSample.vshost.exe
+/samples/Direct3D9/WPF Interop/WpfSample/bin/x86/Release/WpfSample.vshost.exe.manifest
+/samples/RawInput/MouseRI/bin/x86/Release/MouseRI.exe
+/samples/RawInput/MouseRI/bin/x86/Release/MouseRI.vshost.exe
+/samples/RawInput/MouseRI/bin/x86/Release/MouseRI.vshost.exe.manifest
+/samples/RawInput/MouseRI/bin/x86/Release/SlimDX.dll
+/samples/RawInput/MouseRI/bin/x86/Release/SlimDX.xml
+/samples/SampleFramework/bin/x86/Release/SampleFramework.XML
+/samples/SampleFramework/bin/x86/Release/SampleFramework.dll
+/samples/SampleFramework/bin/x86/Release/SlimDX.dll
+/samples/SampleFramework/bin/x86/Release/SlimDX.xml

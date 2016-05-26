@@ -4960,5 +4960,6 @@
     </None>
     <None Include="DocComments.txt" />
     <None Include="ReleaseNotes.txt" />
+    <None Include="slimdxKey.snk" />
   </ItemGroup>
 </Project>
