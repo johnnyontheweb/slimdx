@@ -74,7 +74,7 @@
     <CLRSupport>true</CLRSupport>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-4.0|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
