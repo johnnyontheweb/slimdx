@@ -10,6 +10,16 @@
 #include "pchfx.h"
 #include <intsafe.h>
 
+void* __cdecl operator new(size_t s, CDataBlockStore& pAllocator)
+{
+    D3DXASSERT(s <= 0xffffffff);
+    return pAllocator.Allocate((UINT)s);
+}
+
+void __cdecl operator delete(void* p, CDataBlockStore& pAllocator)
+{
+}
+
 namespace D3DX11Core
 {
 
