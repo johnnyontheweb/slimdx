@@ -91,56 +91,47 @@ namespace Windows
 
 	void RenderForm::OnPauseRendering(EventArgs^ e)
 	{
-		if (&RenderForm::PauseRendering != nullptr)
-			PauseRendering(this, e);
+		PauseRendering(this, e);
 	}
 
 	void RenderForm::OnResumeRendering(EventArgs^ e)
 	{
-		if (&RenderForm::ResumeRendering != nullptr)
-			ResumeRendering(this, e);
+		ResumeRendering(this, e);
 	}
 
 	void RenderForm::OnUserResized(EventArgs^ e)
 	{
-		if (&RenderForm::UserResized != nullptr)
-			UserResized(this, e);
+		UserResized(this, e);
 	}
 
 	void RenderForm::OnMonitorChanged(EventArgs^ e)
 	{
-		if (&RenderForm::MonitorChanged != nullptr)
-			MonitorChanged(this, e);
+		MonitorChanged(this, e);
 	}
 
 	void RenderForm::OnAppActivated(EventArgs^ e)
 	{
-		if (&RenderForm::AppActivated != nullptr)
-			AppActivated(this, e);
+		AppActivated(this, e);
 	}
 
 	void RenderForm::OnAppDeactivated(EventArgs^ e)
 	{
-		if (&RenderForm::AppDeactivated != nullptr)
-			AppDeactivated(this, e);
+		AppDeactivated(this, e);
 	}
 
 	void RenderForm::OnSystemSuspend(EventArgs^ e)
 	{
-		if (&RenderForm::SystemSuspend != nullptr)
-			SystemSuspend(this, e);
+		SystemSuspend(this, e);
 	}
 
 	void RenderForm::OnSystemResume(EventArgs^ e)
 	{
-		if (&RenderForm::SystemResume != nullptr)
-			SystemResume(this, e);
+		SystemResume(this, e);
 	}
 
 	void RenderForm::OnScreensaver(CancelEventArgs^ e)
 	{
-		if (&RenderForm::Screensaver != nullptr)
-			Screensaver(this, e);
+		Screensaver(this, e);
 	}
 
 	void RenderForm::WndProc( Message% m )

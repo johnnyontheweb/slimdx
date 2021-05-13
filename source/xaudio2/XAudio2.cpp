@@ -164,20 +164,17 @@ namespace XAudio2
 
 	void XAudio2::OnCriticalError(ErrorEventArgs^ e)
 	{
-		if( &XAudio2::CriticalError != nullptr )
-			CriticalError( this, e );
+		CriticalError( this, e );
 	}
 
 	void XAudio2::OnProcessingPassEnd(EventArgs^ e)
 	{
-		if( &XAudio2::ProcessingPassEnd != nullptr )
-			ProcessingPassEnd( this, e );
+		ProcessingPassEnd( this, e );
 	}
 
 	void XAudio2::OnProcessingPassStart(EventArgs^ e)
 	{
-		if( &XAudio2::ProcessingPassStart != nullptr )
-			ProcessingPassStart( this, e );
+		ProcessingPassStart( this, e );
 	}
 
 	Guid XAudio2::FormatSubtypePcm::get()

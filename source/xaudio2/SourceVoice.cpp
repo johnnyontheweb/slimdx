@@ -103,44 +103,37 @@ namespace XAudio2
 
 	void SourceVoice::OnBufferEnd( ContextEventArgs^ e )
 	{
-		if( &SourceVoice::BufferEnd != nullptr )
-			BufferEnd( this, e );
+		BufferEnd( this, e );
 	}
 
 	void SourceVoice::OnBufferStart( ContextEventArgs^ e )
 	{
-		if( &SourceVoice::BufferStart != nullptr )
-			BufferStart( this, e );
+		BufferStart( this, e );
 	}
 
 	void SourceVoice::OnLoopEnd( ContextEventArgs^ e )
 	{
-		if( &SourceVoice::LoopEnd != nullptr )
-			LoopEnd( this, e );
+		LoopEnd( this, e );
 	}
 
 	void SourceVoice::OnStreamEnd( EventArgs^ e )
 	{
-		if( &SourceVoice::StreamEnd != nullptr )
-			StreamEnd( this, e );
+		StreamEnd( this, e );
 	}
 
 	void SourceVoice::OnVoiceError( ErrorEventArgs^ e )
 	{
-		if( &SourceVoice::VoiceError != nullptr )
-			VoiceError( this, e );
+		VoiceError( this, e );
 	}
 
 	void SourceVoice::OnVoiceProcessingPassEnd( EventArgs^ e )
 	{
-		if( &SourceVoice::VoiceProcessingPassEnd != nullptr )
-			VoiceProcessingPassEnd( this, e );
+		VoiceProcessingPassEnd( this, e );
 	}
 
 	void SourceVoice::OnVoiceProcessingPassStart( int bytesRequired )
 	{
-		if( &SourceVoice::VoiceProcessingPassStart != nullptr )
-			VoiceProcessingPassStart( this, gcnew StartProcessingEventArgs( bytesRequired )  );
+		VoiceProcessingPassStart( this, gcnew StartProcessingEventArgs( bytesRequired )  );
 	}
 
 	Result SourceVoice::Discontinuity()
