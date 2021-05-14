@@ -1,0 +1,56 @@
+From a38904038ecb66c79517665a06a6404bfe21f886 Mon Sep 17 00:00:00 2001
+From: abc <abc@abc.com>
+Date: Thu, 13 May 2021 22:06:33 +0200
+Subject: [PATCH 2/4] move new and delete operators definition in cpp file
+
+---
+ external/Effects11/Inc/d3dxGlobal.h | 10 ++--------
+ external/Effects11/d3dxGlobal.cpp   | 10 ++++++++++
+ 2 files changed, 12 insertions(+), 8 deletions(-)
+
+diff --git external/Effects11/Inc/d3dxGlobal.h external/Effects11/Inc/d3dxGlobal.h
+index 57da3a3..cbf2a2e 100644
+--- external/Effects11/Inc/d3dxGlobal.h
++++ external/Effects11/Inc/d3dxGlobal.h
+@@ -664,15 +664,9 @@ public:
+ // The trick is that we never free, so we don't have to keep as much state around
+ // Use PRIVATENEW in CEffectLoader
+ 
+-static void* __cdecl operator new(size_t s, CDataBlockStore &pAllocator)
+-{
+-    D3DXASSERT( s <= 0xffffffff );
+-    return pAllocator.Allocate( (UINT)s );
+-}
++void* __cdecl operator new(size_t s, CDataBlockStore& pAllocator);
+ 
+-static void __cdecl operator delete(void* p, CDataBlockStore &pAllocator)
+-{
+-}
++void __cdecl operator delete(void* p, CDataBlockStore& pAllocator);
+ 
+ 
+ //////////////////////////////////////////////////////////////////////////
+diff --git external/Effects11/d3dxGlobal.cpp external/Effects11/d3dxGlobal.cpp
+index be1cee1..40d4eeb 100644
+--- external/Effects11/d3dxGlobal.cpp
++++ external/Effects11/d3dxGlobal.cpp
+@@ -10,6 +10,16 @@
+ #include "pchfx.h"
+ #include <intsafe.h>
+ 
++void* __cdecl operator new(size_t s, CDataBlockStore& pAllocator)
++{
++    D3DXASSERT(s <= 0xffffffff);
++    return pAllocator.Allocate((UINT)s);
++}
++
++void __cdecl operator delete(void* p, CDataBlockStore& pAllocator)
++{
++}
++
+ namespace D3DX11Core
+ {
+ 
+-- 
+2.29.2.windows.2
+
